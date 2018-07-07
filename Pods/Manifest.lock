@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (4.7.2)
+  - Kingfisher (4.8.0)
+  - SVProgressHUD (2.2.5)
+  - SwiftyJSON (4.1.0)
+  - SwiftyOnboard (1.3.6)
+
+DEPENDENCIES:
+  - Alamofire
+  - Kingfisher
+  - SVProgressHUD
+  - SwiftyJSON
+  - SwiftyOnboard
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Kingfisher
+    - SVProgressHUD
+    - SwiftyJSON
+    - SwiftyOnboard
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  Kingfisher: 976d828df2b24834c6a3f2fc4d82cdbd26552be1
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+  SwiftyOnboard: 8dec41d4725b3e6ebcae276dd206d7f74c1b7f61
+
+PODFILE CHECKSUM: 6303d7eccab9fcd16ffd35bb6ddabb7196d082e9
+
+COCOAPODS: 1.5.3
