@@ -8,12 +8,15 @@
 
 import Foundation
 import UIKit
+import Speech
+import SVProgressHUD
 
 // MARK:  All Players & Golf players
 var URL_SPORTS = "https://api.myjson.com/bins/66851"
 var imageHeaderArray = ["football_ic","tennis_ic","golf_ic","formula1_ic"]
 
 extension UIViewController {
+    // Custom Alerts
     func displayAlertMessage(userTitle: String, userMessage: String) {
         
         let myAlert = UIAlertController(title: userTitle, message: userMessage, preferredStyle: UIAlertControllerStyle.alert);

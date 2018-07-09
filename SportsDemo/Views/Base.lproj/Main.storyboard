@@ -120,8 +120,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UkO-1b-bx8">
+                                <rect key="frame" x="0.0" y="64" width="375" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="9aV-I2-5yH"/>
+                                </constraints>
+                                <state key="normal" title="Start Speech Search"/>
+                                <connections>
+                                    <action selector="speechSearcherButtonTapped:" destination="sMl-Do-nQm" eventType="touchUpInside" id="N1w-bz-QyO"/>
+                                </connections>
+                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TLc-oh-OCu">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="122" width="375" height="496"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
@@ -141,22 +151,26 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="LgJ-Ry-dxw" firstAttribute="trailing" secondItem="TLc-oh-OCu" secondAttribute="trailing" id="Rdk-OM-vYn"/>
-                            <constraint firstItem="TLc-oh-OCu" firstAttribute="top" secondItem="LgJ-Ry-dxw" secondAttribute="top" id="k9B-50-WMs"/>
-                            <constraint firstItem="LgJ-Ry-dxw" firstAttribute="bottom" secondItem="TLc-oh-OCu" secondAttribute="bottom" id="pZX-Sl-ZNj"/>
-                            <constraint firstItem="TLc-oh-OCu" firstAttribute="leading" secondItem="LgJ-Ry-dxw" secondAttribute="leading" id="qwd-gA-7p0"/>
+                            <constraint firstItem="TLc-oh-OCu" firstAttribute="leading" secondItem="LgJ-Ry-dxw" secondAttribute="leading" id="BTe-14-5wK"/>
+                            <constraint firstItem="UkO-1b-bx8" firstAttribute="top" secondItem="LgJ-Ry-dxw" secondAttribute="top" id="CLk-qJ-RKz"/>
+                            <constraint firstItem="TLc-oh-OCu" firstAttribute="trailing" secondItem="LgJ-Ry-dxw" secondAttribute="trailing" id="EWV-Pq-Opo"/>
+                            <constraint firstItem="UkO-1b-bx8" firstAttribute="trailing" secondItem="LgJ-Ry-dxw" secondAttribute="trailing" id="L3s-4L-mSt"/>
+                            <constraint firstItem="TLc-oh-OCu" firstAttribute="top" secondItem="UkO-1b-bx8" secondAttribute="bottom" constant="-2" id="Rr8-qp-Cs5"/>
+                            <constraint firstItem="TLc-oh-OCu" firstAttribute="bottom" secondItem="LgJ-Ry-dxw" secondAttribute="bottom" id="TE4-Wq-w10"/>
+                            <constraint firstItem="UkO-1b-bx8" firstAttribute="leading" secondItem="LgJ-Ry-dxw" secondAttribute="leading" id="ePo-T1-pnK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LgJ-Ry-dxw"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Golf Players" image="golf_tabBar" id="LpE-vd-3JS"/>
                     <connections>
+                        <outlet property="microphoneButton" destination="UkO-1b-bx8" id="DD8-ab-DBJ"/>
                         <outlet property="searchBar" destination="ebr-5s-Isk" id="mLe-eP-LpI"/>
                         <outlet property="tableView" destination="TLc-oh-OCu" id="zzy-uF-qX0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LzE-vh-H77" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3284" y="904"/>
+            <point key="canvasLocation" x="3284" y="903.59820089955031"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0HR-4Z-8Tl">
@@ -183,6 +197,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Ze2-RE-0jY"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0aA-NP-BO9">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

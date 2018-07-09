@@ -30,6 +30,7 @@
 		BB1CE97720F001AB0029C122 /* Players.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CE97620F001AB0029C122 /* Players.swift */; };
 		BB1CE97920F002B40029C122 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CE97820F002B40029C122 /* UIHelper.swift */; };
 		BB1CE97C20F1150E0029C122 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CE97B20F1150E0029C122 /* Connectivity.swift */; };
+		BB200AA620F37E290032CE8C /* buttonClicked.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB200AA520F37E290032CE8C /* buttonClicked.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,8 @@
 		BB1CE97620F001AB0029C122 /* Players.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Players.swift; sourceTree = "<group>"; };
 		BB1CE97820F002B40029C122 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		BB1CE97B20F1150E0029C122 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		BB200AA320F371160032CE8C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BB200AA520F37E290032CE8C /* buttonClicked.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buttonClicked.mp3; sourceTree = "<group>"; };
 		C7E5A730C19F8F2FA40BF1B1 /* Pods-SportsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportsDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SportsDemo/Pods-SportsDemo.release.xcconfig"; sourceTree = "<group>"; };
 		CACF8D0308E8CEA745AE8AE4 /* Pods-SportsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportsDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SportsDemo/Pods-SportsDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +109,7 @@
 			children = (
 				BB1CE90C20EE67740029C122 /* AppDelegate.swift */,
 				BB1CE91B20EE67840029C122 /* Info.plist */,
+				BB200AA520F37E290032CE8C /* buttonClicked.mp3 */,
 				BB1CE93B20EE79AD0029C122 /* Models */,
 				BB1CE93220EE714A0029C122 /* Views */,
 				BB1CE92C20EE70130029C122 /* Controllers */,
@@ -222,6 +226,7 @@
 		D9CFA6A72424436663D5F2EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BB200AA320F371160032CE8C /* AVFoundation.framework */,
 				8AA8BE4027F2F8E4BAACB990 /* Pods_SportsDemo.framework */,
 			);
 			name = Frameworks;
@@ -288,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB1CE91A20EE67840029C122 /* LaunchScreen.storyboard in Resources */,
+				BB200AA620F37E290032CE8C /* buttonClicked.mp3 in Resources */,
 				BB1CE94E20EF69600029C122 /* InfoCell.xib in Resources */,
 				BB1CE97020EFEEE30029C122 /* Instructions.storyboard in Resources */,
 				BB1CE91720EE67840029C122 /* Assets.xcassets in Resources */,
@@ -440,7 +446,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -494,7 +500,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
